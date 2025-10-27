@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ours Agile — Le jeu, le partage, la création</title>
+  <meta name="description" content="Studio-atelier du jeu vidéo indépendant : création, accompagnement et transmission autour du jeu.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --miel: #F8B400;
+      --miel-dark: #E7A000;
+      --brun: #6B4E2E;
+      --fond: #FFFDF7;
+      --encre: #1C1C1C;
+      --gris: #6B6B6B;
+      --card: #FFFFFF;
+      --radius: 16px;
+      --shadow: 0 6px 18px rgba(107, 78, 46, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: "Plus Jakarta Sans", sans-serif; background: var(--fond); color: var(--encre); }
+    a { text-decoration: none; color: inherit; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      max-width: 1100px; margin: 0 auto; padding: 24px;
+    }
+    .brand { font-weight: 800; letter-spacing: .3px; display: flex; align-items: center; gap: 8px; }
+    .logo { width: 2rem; }
+    nav a { font-weight: 600; color: var(--gris); margin-left: 20px; }
+    nav a:hover { color: var(--brun); }
+
+    /* Hero */
+    .hero { text-align: center; padding: 20px; max-width: 1100px; margin: 0 auto; }
+    .bear { width: min(720px, 92vw); margin: 24px auto 0; }
+    .bear img { width: 100%; height: auto; display: block; }
+    .table-line {
+      height: 4px; width: 100%; background: linear-gradient(90deg, var(--miel), var(--miel-dark));
+      border-radius: 4px; margin: -4px auto 0;
+    }
+    h1 {
+      font-weight: 800; font-size: clamp(28px, 3vw, 42px);
+      margin: 22px 0 8px; letter-spacing: .2px;
+    }
+    .tagline { color: var(--gris); margin: 0 0 28px; }
+
+    /* Cards */
+    .cards {
+      display: grid; gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      margin-top: 22px;
+    }
+    .card {
+      background: var(--card); border-radius: var(--radius); padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(107, 78, 46, 0.08);
+      display: flex; flex-direction: column; justify-content: space-between;
+      min-height: 240px;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(107, 78, 46, 0.15);
+    }
+    .card h3 { margin: 0; font-size: 18px; font-weight: 800; color: var(--brun); }
+    .card p { margin: 6px 0 0; color: var(--encre); line-height: 1.45; font-size: 15px; }
+    .chip { font-size: 28px; }
+    .btn {
+      align-self: center;
+      background: linear-gradient(135deg, var(--miel), var(--miel-dark));
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+      margin-top: 16px;
+      box-shadow: 0 6px 12px rgba(248,180,0,0.25);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(231,160,0,0.28); }
+    .link {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer { text-align: center; color: var(--gris); font-size: 14px; margin-top: 60px; padding: 24px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><img src="full_animated_ours-agile-black-cropped.gif" class="logo">OURS AGILE</div>
+  <nav>
+    <a href="#contact">Discutons</a>
+    <a href="#about">C'est qui cet ours&nbsp;?</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="bear">
+      <img src="baniere_ours.svg" alt="Ours curieux posant la truffe sur la table">
+    </div>
+
+    <h1>Let the Bear take Care</h1>
+    <p class="tagline">Le studio-atelier du jeu vidéo : créer, accompagner et partager autour du jeu.</p>
+
+    <div class="cards">
+      <article class="card">
+        <div>
+          <div class="chip">🎮</div>
+          <h3>Créer des jeux</h3>
+          <p>Ours Agile conçoit et développe ses propres jeux indépendants — des expériences ludiques et poétiques fabriquées avec curiosité.</p>
+        </div>
+        <a class="btn" href="https://ours-agile.itch.io/">Découvrir les jeux</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="chip">🧩</div>
+          <h3>Aider à faire des jeux</h3>
+          <p>Besoin d’un coup de patte pour ton projet ? L’ours t’aide à coder, équilibrer, finaliser et publier ton jeu avec sérénité.</p>
+        </div>
+        <a class="btn" href="#contact">Collaborer</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="chip">🧠</div>
+          <h3>Partager la passion</h3>
+          <p>Ateliers, formations et découvertes du jeu vidéo — pour apprendre, expérimenter et transmettre la magie du code et du fun.</p>
+        </div>
+        <a class="btn" href="mailto:contact@ours-agile.com">Organiser une session</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="hero" style="margin-top:56px">
+    <h2 style="font-size:26px;margin:0 0 10px">C'est qui cet ours&nbsp;?</h2>
+    <p class="tagline">Ours Agile est né le 1er avril 2021 — et non, ce n’est pas un poisson d’avril.
+C’est le jour où un ours un peu trop curieux a décidé de troquer sa tanière contre un clavier pour explorer le monde du jeu vidéo indépendant.
+<br><br>
+Depuis, l’ours code, teste, apprend, et partage avec la même philosophie : travailler calmement, patiemment et efficacement.
+Pas de précipitation : chaque ligne de code est un pas dans la neige, chaque projet une aventure à raconter.
+<br><br>
+Implanté à <a href="https://maps.app.goo.gl/7T6KengWNsgS4sWY6" class="link">Angers</a>, Ours Agile fait partie des membres fondateurs de l’<a href="https://ajva.fr/" class="link">AJVA</a> (<i>Association du Jeu Vidéo Angevin</i>), une association qui fédère les créateurs locaux, favorise les rencontres, et aide à faire grandir la scène vidéoludique régionale.
+<br><br>
+Aujourd’hui, l’ours développe avec fierté <a href="https://ours-agile.itch.io/banana-man-the-space-monkeys" class="link">Banana Man : The Space Monkeys</a>, un jeu aussi absurde qu’attachant, né de cette envie de créer des expériences qui mêlent humour, mécaniques de gameplay syncrétiques et identité forte.
+<br><br>
+C’est le projet phare du moment, celui qui incarne toute la démarche du studio : créer librement, aider les autres à créer, et transmettre la passion du jeu.</p>
+</section>
+
+  <section id="contact" class="hero" style="margin-top:44px">
+    <h2 style="font-size:26px;margin:0 0 12px">On joue ensemble&nbsp;?</h2>
+    <p class="tagline">Écris à l’ours pour parler d’un jeu, d’une idée ou d’un atelier.</p>
+    <p style="margin-top:20px; font-weight:600;">📬 <a href="mailto:contact@ours-agile.com">contact@ours-agile.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <div>siren n°911 724 169 — © Ours Agile</div>
+</footer>
+
+</body>
+</html>
