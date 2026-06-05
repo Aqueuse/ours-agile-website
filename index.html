@@ -31,47 +31,104 @@
       </div>
 
       <h1>Let the Bear take Care</h1>
-      <p class="tagline">Créer, accompagner et partager autour du jeu vidéo.</p>
+      <p class="tagline">Créer, former et partager autour du jeu vidéo.</p>
 
-      <div class="cards">
-        <article class="card">
-          <div>
-            <div class="chip">🎮</div>
-            <h3>Créer des jeux</h3>
-            <p>Ours Agile conçoit et développe ses propres jeux indépendants sur itch.io — en dehors de Steam et de
-              Microsoft.</p>
-          </div>
-          <a class="button" href="https://ours-agile.itch.io/">Découvrir les jeux</a>
-        </article>
+          <section id="formations" class="hero" style="margin-top:56px">
+      <h2 style="font-size:26px; margin:0 0 10px">Les Formations de l'Ours</h2>
 
-        <article class="card">
-          <div>
-            <div class="chip">🧠</div>
-            <h3>Partager la passion</h3>
-            <p>Ateliers, formations et découvertes du jeu vidéo — l’Ours aime transmettre la magie du code et du fun.
-            </p>
-          </div>
-          <a class="button" href="#formations">Accéder aux formations</a>
-        </article>
+      <div class="tabs-container">
 
-        <article class="card">
-          <div>
-            <div class="chip">🧩</div>
-            <h3>Aider sur un projet</h3>
-            <p>Besoin d’un coup de patte pour ton jeu ? L’ours t’aide à coder, optimiser, finaliser et publier ton jeu
-              avec sérénité.</p>
-          </div>
-          <a class="button" href="#contact">Collaborer</a>
-        </article>
+        <div class="tabs-controls" role="tablist">
+          <button class="tab-button active" role="tab" aria-selected="true" aria-controls="panel-institutions"
+            id="tab-institutions">
+            🏫 Écoles & Institutions
+          </button>
+          <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-particuliers"
+            id="tab-particuliers">
+            🐻 Passionnés & Adultes
+          </button>
+        </div>
 
+        <div class="tabs-content">
+          <section id="panel-institutions" class="tab-panel active" role="tabpanel" aria-labelledby="tab-institutions">
+            <p class="panel-intro">Ateliers d'orientation active et dispositifs clé en main pour collèges, lycées, CIO
+              et structures publiques.</p>
+
+            <div class="cards-grid">
+              <article class="card">
+                <div>
+                  <div class="chip">🧭</div>
+                  <h3>Orientation Active (1 jour)</h3>
+                  <p>Démystifier les métiers de la tech. Une journée pour confronter les élèves à la logique
+                    algorithmique pure (sans IA) et confirmer les vocations avant les choix d'orientation majeurs (Spé
+                    NSI, Post-Bac).</p>
+                </div>
+                <a class="button outline" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Demander la fiche technique</a>
+              </article>
+
+              <article class="card">
+                <div>
+                  <div class="chip">🚀</div>
+                  <h3>Bootcamp Clé en Main (1 sem.)</h3>
+                  <p>Immersion totale dans la peau d'un studio indépendant. Idéal pour les semaines thématiques, les
+                    dispositifs d'éveil scientifique ou l'animation estivale. Nous fournissons toute la structure
+                    pédagogique.</p>
+                </div>
+                <a class="button" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Planifier une intervention</a>
+              </article>
+            </div>
+          </section>
+
+          <section id="panel-particuliers" class="tab-panel" role="tabpanel" aria-labelledby="tab-particuliers" hidden>
+            <p class="panel-intro">Formations immersives et accélérateurs de compétences en petit groupe de 8 personnes
+              maximum.</p>
+
+            <div class="cards-grid">
+              <article class="card">
+                <div>
+                  <div class="chip">🚀</div>
+                  <h3>Initiation (1 jour)</h3>
+                  <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Public :</strong> 12 - 99 ans | En présentiel</p>
+                  <p>Le déclic créatif. En une journée, on ouvre un projet Unity existant, on le transforme en équipe, on comprend la logique et on repart avec son jeu sur clé USB ou en ligne sur itch.io.</p>
+                </div>
+                <a class="button outline" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Demander la fiche technique</a>
+              </article>
+
+              <article class="card">
+                <div>
+                  <div class="chip">⚡</div>
+                  <h3>Bootcamp (1 semaine)</h3>
+                  <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Public :</strong> 12 - 99 ans | En présentiel / Fablab</p>
+                  <p>Le sprint intensif. 7 jours pour concevoir un jeu de A à Z. Au programme : initiation au C#, modélisation 3D sur Blender, intégration de l'UI, de la physique et gestion de projet avec Hacknplan.</p>
+                </div>
+                <a class="button outline" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Demander la fiche technique</a>
+              </article>
+
+              <article class="card">
+                <div>
+                  <div class="chip">🧠</div>
+                  <h3>Programmation C# GameDev No AI (1 mois)</h3>
+                  <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Public :</strong> 12 - 99 ans | Hybride ou Présentiel</p>
+                  <p>Le grand plongeon dans l'algorithmie. Conçu pour ceux qui veulent une autonomie totale. On apprend
+                    à
+                    structurer et coder ses propres systèmes sans jamais dépendre de la béquille de l'IA.</p>
+                </div>
+                <a class="button outline" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Demander la fiche technique</a>
+              </article>
+            </div>
+          </section>
+
+        </div>
       </div>
+    </section>
+
     </section>
 
     <section id="about" class="hero" style="margin-top:56px">
       <h2 style="font-size:26px;margin:0 0 10px">C'est qui cet ours&nbsp;?</h2>
       <p class="tagline">Ours Agile est né le 1er avril 2021 — et non, ce n’est pas un poisson d’avril.
         <br><br>
-        Depuis, l’ours code, teste, apprend, et partage avec la même philosophie : efficacité, propreté, ouverture.
+        Depuis, l’ours code, teste, apprend, et développe la même philosophie : efficacité, propreté, partage.
         <br><br>
         Implanté à <a href="https://maps.app.goo.gl/7T6KengWNsgS4sWY6" class="link">Angers</a>, Ours Agile fait partie
         des membres fondateurs de l’<a href="https://ajva.fr/" class="link">AJVA</a> (<i>Association du Jeu Vidéo
@@ -89,50 +146,6 @@
       </p>
     </section>
 
-    <section id="formations" class="hero" style="margin-top:56px">
-      <h2 style="font-size:26px; margin:0 0 10px">Les Formations de l'Ours</h2>
-      <p class="tagline">Pour les jeunes passionnés et les adultes, nous proposons des parcours exigeants pour apprendre
-        à concevoir et coder, pas seulement à consommer.</p>
-
-      <div class="cards" style="margin-top:24px">
-
-        <article class="card">
-          <div>
-            <div class="chip">🚀</div>
-            <h3>Initiation (1 jour)</h3>
-            <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Public :</strong> 12 - 99 ans | En
-              présentiel</p>
-            <p>Le déclic créatif. En une journée, on ouvre un projet Unity existant, on le transforme en équipe, on
-              comprend la logique et on repart avec son jeu sur clé USB ou en ligne sur itch.io.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <div class="chip">⚡</div>
-            <h3>Bootcamp (1 semaine)</h3>
-            <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Public :</strong> 12 - 99 ans | En
-              présentiel / Fablab</p>
-            <p>Le sprint intensif. 7 jours pour concevoir un jeu de A à Z. Au programme : initiation au C#, modélisation
-              3D sur Blender, intégration de l'UI, de la physique et gestion de projet avec Hacknplan.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div>
-            <div class="chip">🧠</div>
-            <h3>Programmation C# GameDev (No AI)</h3>
-            <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Format :</strong>
-              1 mois | Hybride ou Internet</p>
-            <p>Le grand plongeon dans l'algorithmie. Conçu pour ceux qui veulent une autonomie totale. On apprend à
-              structurer et coder ses propres systèmes sans jamais dépendre de la béquille de l'IA.</p>
-          </div>
-        </article>
-      </div>
-      <br><br>
-      <button class="button"><a href="https://forms.gle/CqA4yDvNjeHBwTh27">Je suis intéressé(e)</a></button>
-    </section>
-
     <section id="contact" class="hero" style="margin-top:44px">
       <h2 style="font-size:26px;margin:0 0 12px">On se serre la patte&nbsp;?</h2>
       <p class="tagline">Écris à l’ours pour parler d’un jeu, d’une idée ou d’un besoin de formation.</p>
@@ -145,5 +158,37 @@
     <div>siren n°911 724 169 — © Ours Agile</div>
   </footer>
 </body>
+
+<script>
+  document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const controls = button.parentElement;
+      const container = controls.parentElement;
+      const targetPanelId = button.getAttribute('aria-controls');
+
+      // Désactiver tous les onglets de ce bloc
+      controls.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+
+      // Cacher tous les panneaux de ce bloc
+      container.querySelectorAll('.tab-panel').forEach(panel => {
+        panel.classList.remove('active');
+        panel.setAttribute('hidden', '');
+      });
+
+      // Activer l'onglet cliqué
+      button.classList.add('active');
+      button.setAttribute('aria-selected', 'true');
+
+      // Afficher le panneau cible
+      const targetPanel = container.querySelector(`#${targetPanelId}`);
+      targetPanel.classList.remove('active'); // fail-safe
+      targetPanel.classList.add('active');
+      targetPanel.removeAttribute('hidden');
+    });
+  });
+</script>
 
 </html>
