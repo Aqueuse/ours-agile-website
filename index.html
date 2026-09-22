@@ -2,193 +2,323 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <link rel="icon" type="image/png" href="assets/ours_agile_head_black.png" />
-  <title>Ours Agile — Let the bear take care</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080853">
+  <link rel="icon" type="image/png" href="assets/ours_agile_head_black.png">
+  <title>Accompagnement Unity à distance — Ours Agile</title>
   <meta name="description"
-    content="Studio-atelier du jeu vidéo indépendant : création, accompagnement et transmission autour du jeu.">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap"
+    content="Une journée individuelle sur Discord pour débloquer ton projet Unity, clarifier ton code et repartir avec un plan d'action concret.">
+  <meta property="og:title" content="Ours Agile — Débloque ton projet Unity">
+  <meta property="og:description"
+    content="Un accompagnement Unity individuel, à distance, directement dans ton projet.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
 
-  <header>
-    <div class="brand"><img src="assets/ours_agile_head_black.png" class="logo">OURS AGILE</div>
-    <nav>
-      <a href="#contact">Discutons</a>
-      <a href="#about">C'est qui cet ours&nbsp;?</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Ours Agile — accueil">
+        <img src="assets/ours_agile_head_black.png" alt="">
+        <span>OURS AGILE</span>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <a class="nav-link" href="#journee">La journée</a>
+        <a class="nav-link" href="#preuves">Résultats</a>
+        <a class="nav-link" href="#about">À propos</a>
+        <a class="nav-cta" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank"
+          rel="noopener noreferrer">Présenter mon projet</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="bear">
-        <img src="assets/logo_ours_agile.png">
-      </div>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true"></span> Deux accompagnements individuels par mois</p>
+        <h1>Ton projet Unity n’avance plus&nbsp;? <em>En une journée, on le remet sur les rails.</em></h1>
+        <p class="hero-lead">Je travaille avec toi, directement dans ton projet, pour comprendre le vrai blocage,
+          traiter l’objectif prioritaire et rendre la suite enfin claire.</p>
 
-      <h1>Let the Bear take Care</h1>
-      <p class="tagline">Créer, former et partager autour du jeu vidéo.</p>
-
-          <section id="formations" class="hero" style="margin-top:56px">
-      <h2 style="font-size:26px; margin:0 0 10px">Les Formations de l'Ours</h2>
-
-      <div class="tabs-container">
-
-        <div class="tabs-controls" role="tablist">
-          <button class="tab-button active" role="tab" aria-selected="true" aria-controls="panel-institutions"
-            id="tab-institutions">
-            🏫 Écoles & Institutions
-          </button>
-          <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-particuliers"
-            id="tab-particuliers">
-            🐻 Passionnés & Adultes
-          </button>
+        <div class="hero-actions">
+          <a class="button primary" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank"
+            rel="noopener noreferrer">Présenter mon projet <span aria-hidden="true">→</span></a>
+          <a class="button secondary" href="#journee">Voir le déroulé</a>
         </div>
 
-        <div class="tabs-content">
-          <section id="panel-institutions" class="tab-panel active" role="tabpanel" aria-labelledby="tab-institutions">
-            <p class="panel-intro">Ateliers d'orientation active et dispositifs clé en main pour collèges, lycées, CIO
-              et structures publiques.</p>
+        <ul class="hero-facts" aria-label="Informations essentielles">
+          <li><strong>6 heures</strong><span>en individuel</span></li>
+          <li><strong>Discord</strong><span>100 % à distance</span></li>
+          <li><strong>350 €</strong><span>la journée</span></li>
+        </ul>
+      </div>
 
-            <div class="cards-grid">
-              <article class="card">
-                <div>
-                  <div class="chip">🧭</div>
-                  <h3>Orientation Active (1 jour)</h3>
-                  <p>Démystifier les métiers de la tech. Une journée pour confronter les élèves à la logique
-                    algorithmique pure (sans IA) et confirmer les vocations avant les choix d'orientation majeurs (Spé
-                    NSI, Post-Bac).</p>
-                </div>
-                <a class="button outline" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Demander la fiche technique</a>
-              </article>
-
-              <article class="card">
-                <div>
-                  <div class="chip">🚀</div>
-                  <h3>Bootcamp Clé en Main (1 sem.)</h3>
-                  <p>Immersion totale dans la peau d'un studio indépendant. Idéal pour les semaines thématiques, les
-                    dispositifs d'éveil scientifique ou l'animation estivale. Nous fournissons toute la structure
-                    pédagogique.</p>
-                </div>
-                <a class="button" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Planifier une intervention</a>
-              </article>
-            </div>
-          </section>
-
-          <section id="panel-particuliers" class="tab-panel" role="tabpanel" aria-labelledby="tab-particuliers" hidden>
-            <p class="panel-intro">Formations immersives et accélérateurs de compétences en petit groupe de 8 personnes
-              maximum.</p>
-
-            <div class="cards-grid">
-              <article class="card">
-                <div>
-                  <div class="chip">🚀</div>
-                  <h3>Initiation (1 jour)</h3>
-                  <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Public :</strong> 12 - 99 ans | En présentiel</p>
-                  <p>Le déclic créatif. En une journée, on ouvre un projet Unity existant, on le transforme en équipe, on comprend la logique et on repart avec son jeu sur clé USB ou en ligne sur itch.io.</p>
-                </div>
-                <a class="button outline" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Demander la fiche technique</a>
-              </article>
-
-              <article class="card">
-                <div>
-                  <div class="chip">⚡</div>
-                  <h3>Bootcamp (1 semaine)</h3>
-                  <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Public :</strong> 12 - 99 ans | En présentiel / Fablab</p>
-                  <p>Le sprint intensif. 7 jours pour concevoir un jeu de A à Z. Au programme : initiation au C#, modélisation 3D sur Blender, intégration de l'UI, de la physique et gestion de projet avec Hacknplan.</p>
-                </div>
-                <a class="button outline" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Demander la fiche technique</a>
-              </article>
-
-              <article class="card">
-                <div>
-                  <div class="chip">🧠</div>
-                  <h3>Programmation C# GameDev No AI (1 mois)</h3>
-                  <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;"><strong>Public :</strong> 12 - 99 ans | Hybride ou Présentiel</p>
-                  <p>Le grand plongeon dans l'algorithmie. Conçu pour ceux qui veulent une autonomie totale. On apprend
-                    à
-                    structurer et coder ses propres systèmes sans jamais dépendre de la béquille de l'IA.</p>
-                </div>
-                <a class="button outline" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank">Demander la fiche technique</a>
-              </article>
-            </div>
-          </section>
-
+      <div class="hero-visual" aria-label="Illustration Ours Agile">
+        <div class="bear-stage">
+          <span class="orbit orbit-one" aria-hidden="true"></span>
+          <span class="orbit orbit-two" aria-hidden="true"></span>
+          <img src="assets/logo_ours_agile.png" alt="L’ours développeur d’Ours Agile">
+        </div>
+        <div class="result-card">
+          <span class="result-icon" aria-hidden="true">✓</span>
+          <div>
+            <strong>À la fin de la journée</strong>
+            <p>Un blocage traité, un projet plus clair et les prochaines étapes dans le bon ordre.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <div class="expertise-strip" aria-label="Domaines d’accompagnement">
+      <span>Unity</span><i aria-hidden="true"></i>
+      <span>C#</span><i aria-hidden="true"></i>
+      <span>Architecture</span><i aria-hidden="true"></i>
+      <span>Gameplay</span><i aria-hidden="true"></i>
+      <span>Multijoueur</span><i aria-hidden="true"></i>
+      <span>Débogage</span>
+    </div>
+
+    <section class="section problem-section">
+      <div class="section-heading narrow">
+        <p class="kicker">Le problème n’est pas ton manque de motivation</p>
+        <h2>Tu n’as probablement pas besoin d’un tutoriel de plus.</h2>
+        <p>Tu as besoin d’un regard extérieur capable d’entrer dans ton projet, de poser les bonnes questions et de
+          t’aider à choisir le prochain mouvement utile.</p>
+      </div>
+
+      <div class="pain-grid">
+        <article class="pain-card">
+          <span class="card-number">01</span>
+          <h3>Le code t’échappe</h3>
+          <p>Chaque nouvelle fonctionnalité fragilise autre chose et tu n’oses plus modifier certains systèmes.</p>
+        </article>
+        <article class="pain-card">
+          <span class="card-number">02</span>
+          <h3>Un blocage résiste</h3>
+          <p>Bug, architecture, input, gameplay ou réseau&nbsp;: tu as déjà essayé plusieurs pistes sans avancer.</p>
+        </article>
+        <article class="pain-card">
+          <span class="card-number">03</span>
+          <h3>Tu ne sais plus quoi finir</h3>
+          <p>La liste s’allonge, le périmètre bouge et aucune prochaine étape ne paraît vraiment prioritaire.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="about" class="hero" style="margin-top:56px">
-      <h2 style="font-size:26px;margin:0 0 10px">C'est qui cet ours&nbsp;?</h2>
-      <p class="tagline">Ours Agile est né le 1er avril 2021 — et non, ce n’est pas un poisson d’avril.
-        <br><br>
-        Depuis, l’ours code, teste, apprend, et développe la même philosophie : efficacité, propreté, partage.
-        <br><br>
-        Implanté à <a href="https://maps.app.goo.gl/7T6KengWNsgS4sWY6" class="link">Angers</a>, Ours Agile fait partie
-        des membres fondateurs de l’<a href="https://ajva.fr/" class="link">AJVA</a> (<i>Association du Jeu Vidéo
-          Angevin</i>), une association qui fédère les créateurs locaux, favorise les rencontres, et aide à faire
-        grandir la scène vidéoludique régionale.
-        <br><br>
-        Aujourd’hui, l’ours participe au développement du jeu vidéo à Angers en formant, créant et stimulant les talents
-        locaux.
-        <br><br>
-        Il streame aussi régulièrement sur <a href="https://www.twitch.tv/M4keuse" class="link">Twitch</a> où il a
-        développé une incroyable communauté de créateurs et passionnés sur <a href="https://discord.gg/YhffQeyhYR"
-          class="link">Discord</a>.
-        <br><br>
-        N’hésitez pas à passer lui dire bonjour&nbsp;!
-      </p>
+    <section class="section day-section" id="journee">
+      <div class="day-copy">
+        <p class="kicker light">La Journée Déblocage Unity</p>
+        <h2>Six heures concentrées sur ton jeu.</h2>
+        <p class="section-intro">Pas de cours générique ni de programme artificiel. La journée est préparée à partir
+          de ton projet et construite autour d’un objectif réaliste.</p>
+
+        <ol class="timeline">
+          <li>
+            <span>Avant</span>
+            <div>
+              <h3>Je découvre ton projet</h3>
+              <p>Tu m’envoies une présentation, une vidéo ou un build et ton principal point de blocage. Je confirme
+                que la journée peut réellement t’aider.</p>
+            </div>
+          </li>
+          <li>
+            <span>Matin</span>
+            <div>
+              <h3>On diagnostique avant de coder</h3>
+              <p>Nous clarifions le problème, son impact et le résultat atteignable. Puis nous choisissons ensemble la
+                stratégie la plus utile.</p>
+            </div>
+          </li>
+          <li>
+            <span>Après-midi</span>
+            <div>
+              <h3>On travaille directement dans le projet</h3>
+              <p>Partage d’écran, explications et pair programming&nbsp;: tu participes aux décisions et tu comprends
+                chaque changement.</p>
+            </div>
+          </li>
+          <li>
+            <span>Après</span>
+            <div>
+              <h3>Tu repars autonome</h3>
+              <p>Nous ordonnons les prochaines étapes et faisons un point court une semaine plus tard.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <aside class="price-card" aria-label="Tarif de la Journée Déblocage Unity">
+        <p class="price-label">Accompagnement individuel</p>
+        <p class="price"><strong>350 €</strong><span>la journée</span></p>
+        <ul>
+          <li>Préparation de ton projet en amont</li>
+          <li>6 heures ensemble sur Discord</li>
+          <li>Travail dans ta propre codebase</li>
+          <li>Plan d’action priorisé</li>
+          <li>Point de suivi à J+7</li>
+        </ul>
+        <a class="button accent" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank"
+          rel="noopener noreferrer">Présenter mon projet <span aria-hidden="true">→</span></a>
+        <p class="availability"><span aria-hidden="true"></span> Deux places ouvertes chaque mois</p>
+      </aside>
     </section>
 
-    <section id="contact" class="hero" style="margin-top:44px">
-      <h2 style="font-size:26px;margin:0 0 12px">On se serre la patte&nbsp;?</h2>
-      <p class="tagline">Écris à l’ours pour parler d’un jeu, d’une idée ou d’un besoin de formation.</p>
-      <p style="margin-top:20px; font-weight:600;">📬 <a href="mailto:contact@ours-agile.com">contact@ours-agile.com</a>
-      </p>
+    <section class="section proof-section" id="preuves">
+      <div class="section-heading">
+        <p class="kicker">Un vrai projet accompagné</p>
+        <h2>Rendre une codebase plus claire, testable et maîtrisable.</h2>
+      </div>
+
+      <div class="case-study">
+        <div class="case-copy">
+          <p class="case-label">Projet Unity multijoueur destiné à la VR</p>
+          <h3>Restructuration du joueur et diagnostic réseau</h3>
+          <p>Le prototype fonctionnait déjà, mais plusieurs responsabilités étaient concentrées dans le contrôleur du
+            joueur et des problèmes compliquaient les tests multijoueurs.</p>
+          <ul class="case-tags" aria-label="Travaux réalisés">
+            <li>Refactorisation</li>
+            <li>Input System</li>
+            <li>Caméra &amp; joueur</li>
+            <li>Diagnostic réseau</li>
+            <li>Mode de test solo</li>
+          </ul>
+          <p class="case-result"><strong>Résultat&nbsp;:</strong> une arborescence plus lisible, des fichiers allégés,
+            des inputs clarifiés et une base plus simple à reprendre.</p>
+        </div>
+
+        <blockquote>
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <p>Au niveau de l’arborescence, c’est bien mieux, bien plus agréable. J’avais peur que les fichiers soient
+            trop longs, mais ils ont été bien allégés. Pour la gestion des inputs, c’est bien plus clean comme ça.</p>
+          <footer>
+            <strong>Radawa</strong>
+            <span>Porteur d’un prototype Unity multijoueur en VR</span>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section beginner-section" id="debuter">
+      <div class="beginner-card">
+        <div class="beginner-copy">
+          <p class="kicker">Tu pars vraiment de zéro&nbsp;?</p>
+          <h2>Crée ton premier petit jeu Unity en groupe.</h2>
+          <p>Une journée guidée pour les adultes qui veulent découvrir Unity et C# en fabriquant quelque chose de
+            jouable, sans prérequis et sans se perdre dans des semaines de théorie.</p>
+          <div class="format-details">
+            <span><strong>3–4</strong> participants</span>
+            <span><strong>1</strong> journée</span>
+            <span><strong>190 €</strong> par personne</span>
+          </div>
+          <a class="text-link" href="mailto:contact@ours-agile.com?subject=Liste%20d%27attente%20-%20Premier%20jeu%20Unity">Rejoindre la liste d’attente <span aria-hidden="true">→</span></a>
+        </div>
+
+        <blockquote class="parent-quote">
+          <p>«&nbsp;Je voulais vous remercier pour cette journée. Mon fils a appris plein de choses&nbsp;! Si de nouveaux
+            événements se produisent, je suis preneuse de l’information.&nbsp;»</p>
+          <footer>
+            <strong>Delphine</strong>
+            <span>Mère d’un participant à une journée d’initiation</span>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-mark" aria-hidden="true">
+        <img src="assets/ours_agile_head_black.png" alt="">
+      </div>
+      <div class="about-copy">
+        <p class="kicker">Derrière l’ours</p>
+        <h2>Je suis Laura, développeuse Unity/C# et formatrice.</h2>
+        <p>J’ai créé Ours Agile pour aider les personnes qui fabriquent des jeux à comprendre ce qu’elles font, prendre
+          de bonnes décisions techniques et aller au bout de leurs idées.</p>
+        <p>J’ai accompagné des projets à distance, travaillé sur un prototype multijoueur en VR et enseigné le
+          développement de jeux vidéo à MyDigitalSchool. Ma manière de travailler tient en trois mots&nbsp;: écoute,
+          adaptation et compétence.</p>
+        <p>Ours Agile est également membre fondateur de l’<a href="https://ajva.fr/" target="_blank"
+            rel="noopener noreferrer">Association du Jeu Vidéo Angevin</a>.</p>
+      </div>
+    </section>
+
+    <section class="section solidarity-section">
+      <div>
+        <p class="kicker light">Une place doit rester accessible</p>
+        <h2>Une journée solidaire gratuite chaque mois.</h2>
+        <p>Je réserve une journée d’accompagnement à une personne disposant de très faibles ressources, sur
+          justificatif. Même préparation, même attention, même qualité de travail.</p>
+      </div>
+      <a class="button ghost-light"
+        href="mailto:contact@ours-agile.com?subject=Candidature%20-%20Journ%C3%A9e%20solidaire%20Unity">Candidater à la journée solidaire</a>
+    </section>
+
+    <section class="section faq-section">
+      <div class="section-heading narrow">
+        <p class="kicker">Questions utiles</p>
+        <h2>Avant de présenter ton projet</h2>
+      </div>
+
+      <div class="faq-grid">
+        <details>
+          <summary>Est-ce que cette journée est adaptée à mon niveau&nbsp;?</summary>
+          <p>Elle est conçue pour les adultes qui savent déjà ouvrir et manipuler un projet Unity, même s’ils ont appris
+            seuls. Si tu pars de zéro, l’atelier collectif sera plus adapté.</p>
+        </details>
+        <details>
+          <summary>Peut-on vraiment débloquer un projet en une journée&nbsp;?</summary>
+          <p>Nous ne terminerons pas un jeu entier. La préparation sert à choisir un objectif précis et atteignable qui
+            remet le projet en mouvement. Si je pense ne pas pouvoir t’aider, je te le dis avant toute réservation.</p>
+        </details>
+        <details>
+          <summary>Est-ce que tu codes le projet à ma place&nbsp;?</summary>
+          <p>Non. Nous travaillons ensemble afin que tu comprennes les choix et restes capable de poursuivre ensuite.
+            Je peux écrire ou restructurer du code pendant la séance, mais jamais sans te l’expliquer.</p>
+        </details>
+        <details>
+          <summary>Comment se passe le travail à distance&nbsp;?</summary>
+          <p>La journée se déroule sur Discord, en partage d’écran. Un dépôt Git ou une sauvegarde complète du projet
+            est demandé avant toute modification.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section final-cta" id="contact">
+      <img src="assets/ours_agile_head_black.png" alt="" aria-hidden="true">
+      <p class="kicker">Ton projet mérite mieux qu’un dossier abandonné</p>
+      <h2>Montre-moi où tu bloques.</h2>
+      <p>Décris ton projet et ton principal problème. Je te répondrai honnêtement sur ce qu’une journée peut apporter.</p>
+      <a class="button primary" href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank"
+        rel="noopener noreferrer">Présenter mon projet <span aria-hidden="true">→</span></a>
+      <a class="email-link" href="mailto:contact@ours-agile.com">contact@ours-agile.com</a>
+    </section>
+
+    <section class="institution-note" aria-label="Interventions pour les établissements">
+      <p><strong>École, CIO ou structure publique&nbsp;?</strong> Les ateliers et interventions pédagogiques existent
+        toujours sur demande.</p>
+      <a href="https://forms.gle/CqA4yDvNjeHBwTh27" target="_blank" rel="noopener noreferrer">Parler d’une intervention <span aria-hidden="true">→</span></a>
     </section>
   </main>
 
-  <footer>
-    <div>siren n°911 724 169 — © Ours Agile</div>
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/ours_agile_head_black.png" alt="">
+      <strong>OURS AGILE</strong>
+    </div>
+    <div>SIREN 911 724 169 · © Ours Agile</div>
+    <div class="footer-links">
+      <a href="https://discord.gg/YhffQeyhYR" target="_blank" rel="noopener noreferrer">Discord</a>
+      <a href="mailto:contact@ours-agile.com">Contact</a>
+    </div>
   </footer>
 </body>
-
-<script>
-  document.querySelectorAll('.tab-button').forEach(button => {
-    button.addEventListener('click', () => {
-      const controls = button.parentElement;
-      const container = controls.parentElement;
-      const targetPanelId = button.getAttribute('aria-controls');
-
-      // Désactiver tous les onglets de ce bloc
-      controls.querySelectorAll('.tab-button').forEach(btn => {
-        btn.classList.remove('active');
-        btn.setAttribute('aria-selected', 'false');
-      });
-
-      // Cacher tous les panneaux de ce bloc
-      container.querySelectorAll('.tab-panel').forEach(panel => {
-        panel.classList.remove('active');
-        panel.setAttribute('hidden', '');
-      });
-
-      // Activer l'onglet cliqué
-      button.classList.add('active');
-      button.setAttribute('aria-selected', 'true');
-
-      // Afficher le panneau cible
-      const targetPanel = container.querySelector(`#${targetPanelId}`);
-      targetPanel.classList.remove('active'); // fail-safe
-      targetPanel.classList.add('active');
-      targetPanel.removeAttribute('hidden');
-    });
-  });
-</script>
 
 </html>
